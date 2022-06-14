@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art API Project!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<div class="header"><h1>Some cool art</h1></div>
+<body>
+    <!--Start of Container For Art Gallery-->
+    <div class="container">
+        <div class="gallery"> 
+            <figure class="art_id gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); artData(this.id, event)" >
+                <img class="gallery__img" src="images/autumn-maples-with-poem-slips244894.jpeg" alt="autumn maples with poem slips 244894">
+            </figure>
+
+            <figure class="art_id gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); artData(this.id, event)">
+                <img class="gallery__img" src="images/frida-kahlo-rivera120048.jpeg" alt="frida kahlo rivera 120048">
+            </figure>
+
+            <figure class="art_id  gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); artData(this.id, event)">
+                <img class="gallery__img" src="images/flowers194313.jpeg" alt="flowers 194313">
+            </figure>
+
+            <figure class="art_id gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); artData(this.id, event)">
+                <img class="gallery__img" src="images/cypresses87327.jpeg" alt="cypresses 87327">
+            </figure>
+
+            <figure class="art_id gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); artData(this.id, event)">
+                <img class="gallery__img" src="images/nighthawks118165.jpeg" alt="nighthawks 118165">
+            </figure>
+
+            <figure class="art_id gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); artData(this.id, event)">
+                <img class="gallery__img" src="images/greyedrainbow83642.jpeg" alt="greyed rainbows 83642">
+            </figure>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js">
+</script>
+</body>
+</html>
+
+
+
+<!--"onclick="load_data()" - Maybe put this after class= gallery_img?
